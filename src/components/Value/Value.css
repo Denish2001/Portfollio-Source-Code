@@ -1,0 +1,33 @@
+.v-container .image-container{
+    border: 8px solid rgb(232 232 232 / 93%);
+    height: 200px;
+    width: 200px;
+}
+.v-container{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+.v-wrapper{
+    background: var(--black);
+    color: white;
+}
+.orangeText{
+    text-align: center;
+}
+.heading{
+    padding-left: 2.5rem;
+}
+
+
+@media (max-width: 1024px){
+    .v-container{
+        flex-direction: column;
+    }
+    @media (max-width: 768px){
+        .accordionButton .primaryText{
+            font-size: 0.8rem;
+        }
+    }
+}
+

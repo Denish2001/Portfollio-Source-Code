@@ -1,38 +1,24 @@
 [
   {
-    "name": "Aliva Priva Jardin",
-    "price": "47,043",
-    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image": "./r1.png"
+    "name": "History of HTML",
+    "price": "11 Minutes Read",
+    "detail": "Howa single man tranformed how we live for ever",
+    "image": "./html.png",
+    "url": "https://medium.com/@awajodenish/the-history-of-html-89a14ba80787"
   },
   {
-    "name": "Asatti Garden City",
-    "price": "66,353",
-    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
-    "image": "./r2.png"
+    "name": "A Guide To SSL Cerificates ",
+    "price": "5 Minutes Read",
+    "detail": "Why your website need to have an SSL key",
+    "image": "./ssl.png",
+    "url": "https://medium.com/@awajodenish/why-you-should-care-about-that-green-lock-a-guide-to-ssl-certificates-7eff15c0fedc"
   },
   {
-    "name": "Citralan Puri Serang",
-    "price": "35,853",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
-    "image": "./r3.png"
-  },
-  {
-    "name": "Aliva Priva Jardin",
-    "price": "47,043",
-    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image": "./r1.png"
-  },
-  {
-    "name": "Asatti Garden City",
-    "price": "66,353",
-    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
-    "image": "./r2.png"
-  },
-  {
-    "name": "Citralan Puri Serang",
-    "price": "35,853",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
-    "image": "./r3.png"
+    "name": "What it means to be Neurodivergent",
+    "price": "3 Minutes Read",
+    "detail": "A deep dive into What it means to be neuro-divergent and what it's not",
+    "image": "./neuro.png",
+    "url": "https://medium.com/@awajodenish/what-it-eans-to-be-neurodivergent-8a6155991d1d"
   }
+  
 ]
