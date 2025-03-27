@@ -1,0 +1,135 @@
+/* About Us Wrapper */
+.r-wrapper {
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Slideshow Container */
+.slideshow-containers {
+  position: relative;
+  max-width: 1100px;
+  margin: 10px auto;
+  text-align: center;
+  
+}
+
+/* Slide Text */
+.slides {
+  color: #333;
+  padding: 20px;
+  transition:all;
+ 
+}
+
+
+/* Previous and Next Buttons */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  opacity: 50%;
+}
+
+.prev-button {
+  left: -50px;
+}
+
+.next-button {
+  right: -50px;
+}
+
+.prev-button img,
+.next-button img {
+  width: 15px;
+  height: 15px;
+}
+
+/* Slide Indicators */
+.slide-indicatorss {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.indicators {
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicators.active {
+  background-color: #333;
+}
+
+/* Mission and Vision Cards */
+.publications-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.mission-vision-card {
+  flex: 1;
+  background-color: #fff;
+  border: 2px solid #336B87;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.mission-vision-card:hover  {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: white;
+  background: var(--primary);
+}
+
+.mission-vision-card:hover p{
+  color: white;
+}
+
+.mission-vision-card .primaryText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #336B87;
+  margin-bottom: 1rem;
+}
+
+.mission-vision-card .secondaryText {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .publications-grid {
+    flex-direction: column;
+  }
+
+  .mission-vision-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-vision-card .primaryText {
+    font-size: 1.2rem;
+  }
+
+  .mission-vision-card .secondaryText {
+    font-size: 0.9rem;
+  }
+}

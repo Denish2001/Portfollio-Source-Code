@@ -1,11 +1,11 @@
 :root {
-  --primary: #1f3e72;
+  --primary: #336B87;
   --secondary: rgba(255, 255, 255, 0.78);
-  --black: #131110;
-  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --black: #336B87;
+  --blue-gradient: linear-gradient(97.05deg, #e0aab2 3.76%, #dc1430 100%);
   --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
-  --blue: #4066ff;
-  --lightBlue: #eeeeff;
+  --blue: #336B87;
+  --lightBlue: #bfd9e7;
   --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
 }
 html{
@@ -15,8 +15,10 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   scroll-behavior: smooth;
+  transition: ease-in-out;
 }
 a {
   color: inherit;
@@ -69,25 +71,42 @@ a {
 }
 
 .primaryText {
-  color: #1f3e72;
-  font-weight: bold;
-  font-size: 2rem;
+  color: #336B87;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
 }
 
+
 .secondaryText {
-  color: rgb(140 139 139);
-  font-size: 0.9rem;
-}
-.orangeText {
-  color: orange;
+  color: gray;
   font-size: 1.5rem;
+  line-height: 1.5;
+}
+.secondarytext{
+  color: white;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.heroText{
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: var(--shadow);
+
 }
 .button{
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 1rem;
   padding: 0.6rem 1.4rem;
   color: white;
-  background: var(--blue-gradient);
+  background: #DC143C;
   border: none;
   border-radius: 4px;
   transition: all 300ms ease-in;
@@ -126,5 +145,77 @@ a {
 }
 
 section{
-  padding-top: 140px;
+  padding-top: 70px;
+}
+/* Publications Grid */
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Publication Card */
+.publication-card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  background: var(--primary);
+
+}
+.publication-card:hover .primaryText,
+.publication-card:hover .secondaryText {
+  color: white; /* Ensure all text turns white on hover */
+}
+
+
+/* Card Image */
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+
+
+/* Physical Location Section */
+.physical-location-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+.physical-location-container iframe{
+  border-radius: 4px;
+}
+
+.physical-location-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--blue);
+}
+/* For smooth loading effect */
+.lazy-loading {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lazy-loaded {
+  opacity: 1;
+}
+
+/* Optional placeholder styling */
+img[src=""] {
+  background: #f5f5f5;
+  min-height: 200px; /* Adjust based on your typical image height */
 }

@@ -1,30 +1,37 @@
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Companies from "./components/Companies/Companies"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Hero/Hero";
 import './App.css'
-import Residencies from "./components/Residencies/Residencies";
-import Value from "./components/Value/Value";
+
 import Contact from "./components/Contact/Contact";
-import GetStarted from "./components/GetStarted/GetStarted";
 import Footer from "./components/Footer/Footer";
-import Projects from "./components/Projects/Projects"
+import PracticeAreas from "./components/PracticeAreas/PracticeAreas";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Publications from "./components/Publications/Publications";
+import Team from "./components/Team/Team";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <div>
         <div className="white-gradient"/>
-        <Header/> 
-        <Hero/> 
-      </div>
-      <Companies/>
-      <Residencies/>
-      <Projects />
-      
-      <Value/>
-      <Contact/>
-      <Footer/> 
+          <Header/> 
+    
+        </div>
+        <ScrollToTop/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/PracticeAreas" element={<PracticeAreas />} />
+          <Route path="/Publications" element={<Publications />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Team" element={<Team />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
     </div>
+    <Footer/>
+    </Router>
 
   );
 }

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "REQUIREMENTS FOR REGISTERING A COMPANY IN KENYA",
+    "image": "./company.jpg",
+    "url": "https://medium.com/@otienoatutiadvocates/requirements-for-registration-of-a-company-in-kenya-53bb18f1555e",
+    "article": {
+      "summary": "Incorporating a company is a crucial step for any business intending to operate independently and be recognized as a separate legal entity from its owners. In Kenya, a company can be registered as a Private Limited Liability Company, Public Limited Liability Company, or a Branch/Subsidiary of a parent company.",
+      "requirements": [
+        "At least three proposed company names",
+        "Physical address of the company",
+        "Postal address of the company",
+        "Email address of the company",
+        "Estimated annual turnover",
+        "Nature of business",
+        "Names and Identification Numbers/Passport Numbers of directors/shareholders",
+        "Occupation and addresses of directors/shareholders",
+        "Share capital and allocation of shares"
+      ],
+      "foreign_requirements": {
+        "description": "Foreign companies or individuals must appoint a local representative to register a branch or incorporate a private limited liability company in Kenya. The local representative typically serves as a director without shares.",
+        "additional_documents": [
+          "Name and Identification Number of the local representative",
+          "Physical and postal address of the local representative",
+          "Notarized copy of the constitution/statutes/articles of association of the parent company",
+          "Notarized copy of the resolution of the parent company"
+        ]
+      },
+      "note": "All documents must be in English or translated into English by an authorized translator."
+    },
+    "disclaimer": "The information provided in this article is for general legal guidance and does not constitute legal advice. Each transaction is unique, and it is advisable to consult a legal expert for specific cases."
+  },
+  {
+    "id": 2,
+    "title": "KENYA’S SUPREME COURT DECISION ON DISTRIBUTION OF MATRIMONIAL PROPERTY",
+    "image": "./divorce.jpg",
+    "url": "https://medium.com/@otienoatutiadvocates/kenyas-supreme-court-decision-on-distribution-of-matrimonial-property-e2add938d67b",
+    "article": {
+      "summary": "This case involved a matrimonial dispute where a divorced wife sought an equal share of properties acquired during marriage. The case progressed through the High Court, Court of Appeal, and ultimately the Supreme Court, which ruled on how matrimonial property should be equitably distributed based on individual contributions.",
+      "court_findings": [
+        {
+          "court": "High Court",
+          "ruling": "Distinguished matrimonial property from individually acquired assets. Awarded the wife 30% of the matrimonial home and 20% of rental units due to indirect contributions."
+        },
+        {
+          "court": "Court of Appeal",
+          "ruling": "Reversed the High Court ruling and ordered a 50:50 split based on evidence of direct contributions."
+        },
+        {
+          "court": "Supreme Court",
+          "ruling": "Affirmed equitable distribution rather than automatic 50:50 division. The wife was entitled to 50% due to proven monetary and indirect contributions."
+        }
+      ],
+      "key_takeaways": [
+        "Article 45(3) of the Kenyan Constitution does not mandate a 50:50 split of matrimonial property but calls for equitable distribution.",
+        "Courts assess each case individually based on financial and non-financial contributions.",
+        "Marriage does not automatically entitle a spouse to 50% of the matrimonial property."
+      ]
+    },
+    "disclaimer": "The information provided in this article is for general legal guidance and does not constitute legal advice. Each transaction is unique, and it is advisable to consult a legal expert for specific cases."
+  },
+  {
+    "id": 3,
+    "title": "HOW TO START A NON-GOVERNMENTAL ORGANIZATION (NGO) IN KENYA",
+    "image": "./ngo.jpg",
+    "url": "https://medium.com/@otienoatutiadvocates/how-to-start-an-ngo-in-kenya",
+    "article": {
+      "summary": "Starting a Non-Governmental Organization (NGO) in Kenya requires compliance with specific legal and regulatory frameworks to ensure legitimacy and effectiveness.",
+      "steps": [
+        "Choose a unique name and conduct a name search with the NGO Coordination Board.",
+        "Draft the constitution detailing the objectives, governance structure, and membership criteria.",
+        "Prepare a list of at least three board members and their identification details.",
+        "Obtain a physical office address in Kenya.",
+        "Submit the application to the NGO Coordination Board, including a duly filled application form, constitution, list of members, and payment of the prescribed fee.",
+        "Await approval and receive an NGO registration certificate."
+      ],
+      "key_requirements": [
+        "A minimum of three board members",
+        "A well-defined constitution",
+        "A clear mission and objectives",
+        "Physical and postal address in Kenya"
+      ]
+    },
+    "disclaimer": "The information provided in this article is for general legal guidance and does not constitute legal advice. Each transaction is unique, and it is advisable to consult a legal expert for specific cases."
+  }
+]
