@@ -29,94 +29,102 @@ const Header = () => {
     return {};
   };
 
+  const navItems = [
+    { path: '/', name: 'Home' },
+    { path: '/Designs', name: 'Designs' },
+    { path: '/Projects', name: 'Engineering' },
+    { path: '/Publications', name: 'Literary' },
+    { path: '/Credentials', name: 'Education' }
+  ];
+
   return (
-    <header className={`h-wrapper ${scrolled ? 'scrolled' : ''}`}>
-      <div className="h-container">
+    <header className={`nav-header ${scrolled ? 'nav-header--scrolled' : ''}`} role="banner">
+      <div className="nav-header__container">
         {/* Logo */}
         <motion.div 
-          className="h-logo"
+          className="nav-header__logo"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link to="/">DA</Link>
+          <Link to="/" aria-label="Home">DA</Link>
         </motion.div>
         
-        {/* Desktop Menu */}
-        <nav className="h-desktop-menu">
-          {[
-            { path: '/', name: 'Home' },
-            { path: '/Designs', name: 'Designs' },
-            { path: '/Projects', name: 'Engineering' },
-            { path: '/Publications', name: 'Literary' },
-            { path: '/Credentials', name: 'Education' }
-          ].map((item) => (
-            <motion.div
-              key={item.path}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link 
-                to={item.path} 
-                className={location.pathname === item.path ? 'active' : ''}
-              >
-                {item.name}
-              </Link>
-            </motion.div>
-          ))}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Link to="/Contact" className="contact-button">
-              Contact
-            </Link>
-          </motion.div>
-        </nav>
-
-        {/* Mobile Menu Button */}
-        <motion.div 
-          className="menu-icon" 
-          onClick={() => setMenuOpened((prev) => !prev)}
-          aria-label="Menu"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          {menuOpened ? <BiX size={30} /> : <BiMenuAltRight size={30} />}
-        </motion.div>
-
-        {/* Mobile Menu */}
-        <OutsideClickHandler onOutsideClick={() => setMenuOpened(false)}>
-          <motion.div 
-            className={`h-mobile-menu ${menuOpened ? 'open' : ''}`} 
-            style={getMenuStyles()}
-            initial={{ x: '100%' }}
-            animate={{ x: menuOpened ? 0 : '100%' }}
-            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-          >
-            {[
-              { path: '/', name: 'Home' },
-              { path: '/Designs', name: 'Designs' },
-              { path: '/Projects', name: 'Engineering' },
-              { path: '/Publications', name: 'Literary' },
-              { path: '/Credentials', name: 'Education' },
-              { path: '/Contact', name: 'Contact' }
-            ].map((item) => (
-              <motion.div
+        {/* Desktop Navigation */}
+        <nav className="nav-header__desktop" aria-label="Main navigation">
+          <ul className="nav-header__desktop-list">
+            {navItems.map((item) => (
+              <motion.li
                 key={item.path}
-                whileHover={{ x: 5 }}
+                className="nav-header__desktop-item"
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Link 
                   to={item.path} 
-                  className={location.pathname === item.path ? 'active' : ''}
-                  onClick={() => setMenuOpened(false)}
+                  className={`nav-header__link ${location.pathname === item.path ? 'nav-header__link--active' : ''}`}
+                  aria-current={location.pathname === item.path ? 'page' : undefined}
                 >
                   {item.name}
                 </Link>
-              </motion.div>
+              </motion.li>
             ))}
-          </motion.div>
+            <motion.li
+              className="nav-header__desktop-item"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link to="/Contact" className="nav-header__button">
+                Contact
+              </Link>
+            </motion.li>
+          </ul>
+        </nav>
+
+        {/* Mobile Menu Toggle */}
+        <motion.button 
+          className="nav-header__toggle" 
+          onClick={() => setMenuOpened((prev) => !prev)}
+          aria-label={menuOpened ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpened}
+          aria-controls="mobile-navigation"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          {menuOpened ? <BiX size={30} /> : <BiMenuAltRight size={30} />}
+        </motion.button>
+
+        {/* Mobile Navigation */}
+        <OutsideClickHandler onOutsideClick={() => setMenuOpened(false)}>
+          <motion.nav 
+            id="mobile-navigation"
+            className={`nav-header__mobile ${menuOpened ? 'nav-header__mobile--open' : ''}`} 
+            style={getMenuStyles()}
+            initial={{ x: '100%' }}
+            animate={{ x: menuOpened ? 0 : '100%' }}
+            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+            aria-label="Mobile navigation"
+          >
+            <ul className="nav-header__mobile-list">
+              {[...navItems, { path: '/Contact', name: 'Contact' }].map((item) => (
+                <motion.li
+                  key={item.path}
+                  className="nav-header__mobile-item"
+                  whileHover={{ x: 5 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link 
+                    to={item.path} 
+                    className={`nav-header__link ${location.pathname === item.path ? 'nav-header__link--active' : ''}`}
+                    onClick={() => setMenuOpened(false)}
+                    aria-current={location.pathname === item.path ? 'page' : undefined}
+                  >
+                    {item.name}
+                  </Link>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.nav>
         </OutsideClickHandler>
       </div>
     </header>

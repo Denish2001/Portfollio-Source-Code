@@ -5,6 +5,7 @@ import { FaBookOpen, FaFlask } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import articles from '../../utils/Articles.json';
 import research from '../../utils/Research.json';
+import { Link } from 'react-router-dom';
 
 const Publications = () => {
   const [activeTab, setActiveTab] = useState('articles');
@@ -81,14 +82,14 @@ const Publications = () => {
                       <span className="work-author"><i>{item.by}</i></span>
                       <span className="work-date">{item.Date}</span>
                     </div>
-                    <a 
-                      href={item.url} 
+                    <Link 
+                      to={item.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="work-link"
                     >
                       Read Article <FiExternalLink className="link-icon" />
-                    </a>
+                    </Link>
                   </div>
                   {hoveredItem === index && (
                     <motion.div 

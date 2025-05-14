@@ -19,6 +19,42 @@
     "detail": "A deep dive into What it means to be neuro-divergent and what it's not",
     "image": "./neuro.png",
     "url": "https://medium.com/@awajodenish/what-it-eans-to-be-neurodivergent-8a6155991d1d"
+  },
+  {
+    "name": "Atieno's Letter",
+    "price": "3 Minutes Read",
+    "detail": "A letter to a jilted lover",
+    "image": "./neuro.png",
+    "url": "https://medium.com/@awajodenish/atienos-letter-4e18a875f6e9"
+  }
+  ,
+  {
+    "name": "Through their Eyes",
+    "price": "5 Minutes Read",
+    "detail": "Crafting Digital Spaces with Clarity and Care for People with Autism.",
+    "image": "./neuro.png",
+    "url": "https://medium.com/@awajodenish/through-their-eyes-crafting-digital-spaces-with-clarity-and-care-for-people-with-autism-a1a44c3df923"
+  },
+  {
+    "name": "Tea in a Basket",
+    "price": "3 Minutes Read",
+    "detail": "A poem for my mother",
+    "image": "./neuro.png",
+    "url": "https://medium.com/@awajodenish/tea-in-a-basket-24ced16ea7bd"
+  },
+  {
+    "name": "The Subbtle Art of Solving a Problem",
+    "price": "3 Minutes Read",
+    "detail": "A poem for Chao",
+    "image": "./neuro.png",
+    "url": "https://medium.com/@awajodenish/the-subtle-art-of-solving-a-problem-fd8fa9152e67"
+  },
+  {
+    "name": "Freak",
+    "price": "3 Minutes Read",
+    "detail": "A song for freaks",
+    "image": "./neuro.png",
+    "url": "https://medium.com/@awajodenish/freak-49a7c6732e4e"
   }
   
 ]

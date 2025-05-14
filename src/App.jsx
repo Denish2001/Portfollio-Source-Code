@@ -4,12 +4,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Designs from './components/Designs/Designs';
-import SoftwareEngineering from './components/Projects/Projects';
 import Certifications from './components/Credentials/Credentials';
 import Publications from './components/Publications/Publications';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import Projects from './components/Projects/Projects';
+import LemonadePaper from './components/Writings/LemonadePaper';
+import DesignThinkingAgile from './components/Writings/DesignThinkingAgile';
 
 const App = () => {
   return (
@@ -54,7 +56,7 @@ const App = () => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <Publications />
+                  <Projects />
                 </motion.div>
               } 
             />
@@ -83,6 +85,32 @@ const App = () => {
                   <Certifications />
                 </motion.div>
               } 
+            />
+            <Route 
+              path="/LemonadePaper" 
+              element={
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <LemonadePaper />
+                </motion.div>
+              }
+            />
+            <Route 
+              path="/DesignThinkingAgile" 
+              element={
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <DesignThinkingAgile />
+                </motion.div>
+              }
             />
             <Route 
               path="/contact" 

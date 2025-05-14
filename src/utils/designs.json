@@ -2,9 +2,9 @@
     "uiux": [
       {
         "id": 1,
-        "title": "Health App Redesign",
+        "title": "Safe Mom App Design",
         "year": "2024",
-        "image": "/images/health-app.png",
+        "image": "./Settings.jpeg",
         "category": "UI/UX",
         "description": "A complete redesign of a health tracking app to improve user experience and engagement.",
         "features": [
@@ -17,7 +17,7 @@
       },
       {
         "id": 2,
-        "title": "E-commerce Dashboard",
+        "title": "Otieno Atuti Website Redesign",
         "year": "2023",
         "image": "/images/ecommerce-dashboard.png",
         "category": "UI/UX",
@@ -34,7 +34,7 @@
     "graphic": [
       {
         "id": 1,
-        "title": "Music Festival Poster",
+        "title": "Graduation Day Poster",
         "year": "2023",
         "image": "/images/festival-poster.png",
         "category": "Graphic Design",
@@ -49,7 +49,7 @@
       },
       {
         "id": 2,
-        "title": "Brand Identity Pack",
+        "title": "Otieno Atuti Brand Identity Pack",
         "year": "2024",
         "image": "/images/brand-identity.png",
         "category": "Graphic Design",

@@ -5,7 +5,7 @@
       "Grade": "First Class Honors",
       "Major": "Business Information Technology",
       "level": "Bachelor's Degree",
-      "image": "/images/edu/university-example-logo.png"
+      "image": "./tuk.jpeg"
     },
     {
       "School": "Mbita High School",
@@ -13,7 +13,7 @@
       "Grade": "A-Levels",
       "Major": "Science",
       "level": "High School",
-      "image": "/images/edu/highschool-logo.png"
+      "image": "./mbita.jpg"
     }
   ]
   

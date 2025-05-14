@@ -5,7 +5,7 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import { FaCode, FaServer, FaMobileAlt } from 'react-icons/fa';
 import data from '../../utils/projects.json';
 
-const SoftwareEngineering = () => {
+const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [hoveredProject, setHoveredProject] = useState(null);
 
@@ -116,9 +116,9 @@ const SoftwareEngineering = () => {
                     >
                       <FiExternalLink className="link-icon" />
                     </a>
-                    {project.github && (
+                    {project.url && (
                       <a 
-                        href={project.github} 
+                        href={project.url} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="project-link"
@@ -162,4 +162,4 @@ const SoftwareEngineering = () => {
   );
 };
 
-export default SoftwareEngineering;
+export default Projects;
