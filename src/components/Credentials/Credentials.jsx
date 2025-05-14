@@ -3,8 +3,8 @@ import './Credentials.css';
 import { motion } from 'framer-motion';
 import { FiChevronDown, FiExternalLink } from 'react-icons/fi';
 import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
-import data from "../../utils/Education.json";
-import AccData from "../../utils/Certifications.json";
+import data from "./Education.json";
+import AccData from "./Certifications.json";
 
 const Credentials = () => {
   const [activeTab, setActiveTab] = useState('education');
