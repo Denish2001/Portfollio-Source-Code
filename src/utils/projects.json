@@ -1,49 +1,50 @@
 [
-    {
-      "name": "School Management System",
-      "price": "python, sql",
-      "detail": "Front end developed using python tkinter Library",
-      "image": "./school.jpeg",
-      "url":"https://github.com/Denish2001/modern-MIS-"
-
-    },
-    {
-        "name": "law Firm website",
-        "price": "HTML, CSS  & JS",
-        "detail": "Static Frontend Website",
-        "image": "./sher.jpeg",
-        "url":"https://otienoatuti.com/"
-    },
-      
-    {
-      "name": "A Booking Sytem",
-      "price": "HTML, CSS Flask & JS",
-      "detail": "Backend deveolped using python Flask",
-      "image": "./booking.png",
-      "url": "https://github.com/Denish2001/FlaskBookingSystem"
-    },
-    {
-      "name": "Sample Hotel Website",
-      "price": "HTML, CSS  & JS",
-      "detail": "Static Frontend Website",
-      "image": "./hotel.png",
-      "url": "https://github.com/Denish2001/hotel"
-    },
-    {
-        "name": "loan Approval System",
-        "price": "Python",
-        "detail": "machine learning sysytem for predicting loans utilizing random forest algorithgm",
-        "image": "./loan.png",
-        "url": "https://github.com/Denish2001/AI-Loan-Approval-system"
-    },
-    {
-        "name": "Social network AD purchase prediction",
-        "price": "Python",
-        "detail": "a machine learning Model utilizing Support vector Machine",
-        "image": "./ads.png",
-        "url": "https://github.com/Denish2001/SuportVectorMachine"
-    }
-      
-      
-  ]
-  
+  {
+    "name": "School Management System",
+    "type": "backend",
+    "tech": "Python, SQL",
+    "detail": "A full-featured school management platform with a desktop-based GUI built using Python's Tkinter. Includes student records, fees, and class scheduling.",
+    "image": "./school.jpeg",
+    "url": "https://github.com/Denish2001/modern-MIS-"
+  },
+  {
+    "name": "Law Firm Website",
+    "type": "frontend",
+    "tech": "HTML, CSS, JavaScript",
+    "detail": "A clean and professional static website designed for a legal firm, showcasing services, team profiles, and contact forms.",
+    "image": "./sher.jpeg",
+    "url": "https://otienoatuti.com/"
+  },
+  {
+    "name": "Online Booking System",
+    "type": "backend",
+    "tech": "HTML, CSS, JavaScript, Flask",
+    "detail": "A web-based booking platform built using Flask for the backend, supporting appointment scheduling and database integration.",
+    "image": "./booking.png",
+    "url": "https://github.com/Denish2001/FlaskBookingSystem"
+  },
+  {
+    "name": "Hotel Website Sample",
+    "type": "frontend",
+    "tech": "HTML, CSS, JavaScript",
+    "detail": "A visually engaging static website for a hotel with room listings, gallery, and contact form for inquiries.",
+    "image": "./hotel.png",
+    "url": "https://github.com/Denish2001/hotel"
+  },
+  {
+    "name": "AI Loan Approval System",
+    "type": "backend",
+    "tech": "Python, Machine Learning",
+    "detail": "A machine learning-based system using the Random Forest algorithm to predict loan approvals based on applicant data.",
+    "image": "./loan.png",
+    "url": "https://github.com/Denish2001/AI-Loan-Approval-system"
+  },
+  {
+    "name": "Social Ad Purchase Prediction",
+    "type": "backend",
+    "tech": "Python, SVM",
+    "detail": "A predictive model that utilizes Support Vector Machines (SVM) to forecast user behavior in social network ad interactions.",
+    "image": "./ads.png",
+    "url": "https://github.com/Denish2001/SuportVectorMachine"
+  }
+]

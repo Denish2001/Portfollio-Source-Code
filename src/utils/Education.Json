@@ -1,0 +1,19 @@
+[
+    {
+      "School": "Technical University of Kenya",
+      "Period": "2020 - 2024",
+      "Grade": "First Class Honors",
+      "Major": "Business Information Technology",
+      "level": "Bachelor's Degree",
+      "image": "/images/edu/university-example-logo.png"
+    },
+    {
+      "School": "Mbita High School",
+      "Period": "2017 - 2019",
+      "Grade": "A-Levels",
+      "Major": "Science",
+      "level": "High School",
+      "image": "/images/edu/highschool-logo.png"
+    }
+  ]
+  

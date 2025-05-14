@@ -1,0 +1,24 @@
+[
+  {
+    "name": "History of HTML",
+    "price": "11 Minutes Read",
+    "detail": "Howa single man tranformed how we live for ever",
+    "image": "./html.png",
+    "url": "https://medium.com/@awajodenish/the-history-of-html-89a14ba80787"
+  },
+  {
+    "name": "A Guide To SSL Cerificates ",
+    "price": "5 Minutes Read",
+    "detail": "Why your website need to have an SSL key",
+    "image": "./ssl.png",
+    "url": "https://medium.com/@awajodenish/why-you-should-care-about-that-green-lock-a-guide-to-ssl-certificates-7eff15c0fedc"
+  },
+  {
+    "name": "What it means to be Neurodivergent",
+    "price": "3 Minutes Read",
+    "detail": "A deep dive into What it means to be neuro-divergent and what it's not",
+    "image": "./neuro.png",
+    "url": "https://medium.com/@awajodenish/what-it-eans-to-be-neurodivergent-8a6155991d1d"
+  }
+  
+]

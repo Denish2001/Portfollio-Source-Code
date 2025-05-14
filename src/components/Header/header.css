@@ -1,57 +1,222 @@
-.h-wrapper{
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it's above other content */
-    background-color: var(--black); /* Ensure background color is set to avoid transparency */
-}
-.h-container{
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: var(--secondary);
-}
-.h-menu{
-    gap: 2rem;
-    right: -100%; /* Hidden by default */
-    transition: all 300ms ease-in;
-}
-.h-menu>*:hover{
-    cursor: pointer;
+:root {
+  --black: #121212;
+  --white: #ffffff;
+  --crimson: #DC143C;
+  --dark-crimson: #b01030;
+  --light-gray: #f5f5f5;
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.menu-icon{
-    display: none;
+/* Header Styles */
+.h-wrapper {
+  background-color: var(--black);
+  color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: var(--transition);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", sans-serif;
 }
 
-.logo{
-    width: 22rem;
-    height: 6rem;
+.h-wrapper.scrolled {
+  background-color: rgba(18, 18, 18, 0.98);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 768px) {
-    .menu-icon {
-      display: block;
-    }
-    .h-menu {
-      z-index: 99;
-      color: var(--black);
-      position: absolute;
-      top: 3rem;
-      right: -100%; /* Hidden by default */
-      background: white;
-      flex-direction: column;
-      font-weight: 500;
-      gap: 2rem;
-      padding: 3rem;
-      border-radius: 10px;
-      align-items: flex-start;
-      box-shadow: var(--shadow);
-      transition: all 300ms ease-in;
-    }
-    .logo{
-        width: 18rem;
-        height: 5rem;
-    }
+
+.h-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.h-logo a {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition);
+  font-family: "Comfortaa", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.h-logo a:hover {
+  color: var(--crimson);
+  transform: scale(1.05);
+}
+
+/* Desktop Menu */
+.h-desktop-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-left: auto;
+}
+
+.h-desktop-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 0.75rem 0;
+  transition: var(--transition);
+}
+
+.h-desktop-menu a:not(.contact-button):hover {
+  color: var(--crimson);
+}
+
+.h-desktop-menu a:not(.contact-button)::after {
+  content: '';
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--crimson);
+  transition: var(--transition);
+}
+
+.h-desktop-menu a:not(.contact-button):hover::after {
+  width: 100%;
+}
+
+.h-desktop-menu a.active {
+  color: var(--crimson);
+  font-weight: 600;
+}
+
+.h-desktop-menu a.active::after {
+  width: 100%;
+}
+
+/* Contact Button */
+.contact-button {
+  background: var(--crimson);
+  color: var(--white) !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  transition: var(--transition);
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(220, 20, 60, 0.3);
+}
+
+.contact-button:hover {
+  background: var(--dark-crimson);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(220, 20, 60, 0.4);
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: var(--white);
+  z-index: 100;
+  transition: var(--transition);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.menu-icon:hover {
+  color: var(--crimson);
+  background: rgba(220, 20, 60, 0.2);
+}
+
+/* Mobile Menu */
+.h-mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: var(--black);
+  padding: 6rem 2rem 2rem;
+  gap: 1.25rem;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+.h-mobile-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.h-mobile-menu a:not(.contact-button):hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--crimson);
+  padding-left: 1.25rem;
+}
+
+.h-mobile-menu a.active {
+  color: var(--crimson);
+  font-weight: 600;
+  background: rgba(220, 20, 60, 0.1);
+}
+
+.h-mobile-menu .contact-button {
+  margin-top: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .h-desktop-menu {
+    gap: 1.5rem;
   }
+}
+
+@media (max-width: 800px) {
+  .h-desktop-menu {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .h-mobile-menu {
+    display: flex;
+  }
+  
+  .h-container {
+    padding: 1rem 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .h-logo a {
+    font-size: 1.5rem;
+  }
+  
+  .h-mobile-menu {
+    width: 80%;
+  }
+  
+  .h-container {
+    padding: 1rem;
+  }
+}
